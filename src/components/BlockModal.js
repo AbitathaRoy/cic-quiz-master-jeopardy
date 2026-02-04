@@ -1,5 +1,5 @@
 import React from 'react';
-import { IconSettings } from '../icons/Icons';
+import { IconFlip, IconX } from '../icons/Icons';
 
 const BlockModal = ({ openBlock, showAnswer, isAdmin, columnName, onClose, onToggleRead, onFlip, onContentChange }) => {
   const contentType = showAnswer ? 'answer' : 'question';
@@ -180,3 +180,5 @@ const BlockModal = ({ openBlock, showAnswer, isAdmin, columnName, onClose, onTog
     </div>
   );
 };
+
+export default BlockModal;

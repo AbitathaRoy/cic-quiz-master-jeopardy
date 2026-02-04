@@ -40,3 +40,5 @@ const IconImage = () => (
     <polyline points="21 15 16 10 5 21"/>
   </svg>
 );
+
+export { IconX, IconFlip, IconHome, IconSettings, IconWarning, IconReset, IconImage };

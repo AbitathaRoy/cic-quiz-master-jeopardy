@@ -12,3 +12,5 @@ const HomeScreen = ({ onGoMain, onGoAdmin }) => (
     </button>
   </div>
 );
+
+export default HomeScreen;

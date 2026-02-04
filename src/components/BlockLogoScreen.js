@@ -1,5 +1,5 @@
 import React from 'react';
-import { IconSettings } from '../icons/Icons';
+import { IconSettings, IconImage, IconReset, IconHome } from '../icons/Icons';
 
 const BlockLogoScreen = ({ quizData, columnNames, gridRows, gridCols, onLogoChange, onApplyToAll, onResetLogos, onBackToAdmin, onGoHome }) => {
   const [selectedBlock, setSelectedBlock] = React.useState(null);
@@ -15,7 +15,7 @@ const BlockLogoScreen = ({ quizData, columnNames, gridRows, gridCols, onLogoChan
   const handleFileUpload = (e) => {
     const file = e.target.files?.[0];
     if (!file || !selectedBlock) return;
-    
+
     const reader = new FileReader();
     reader.onload = (ev) => {
       const logoUrl = ev.target.result;
@@ -117,3 +117,5 @@ const BlockLogoScreen = ({ quizData, columnNames, gridRows, gridCols, onLogoChan
     </div>
   );
 };
+
+export default BlockLogoScreen;

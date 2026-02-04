@@ -15,3 +15,5 @@ const BlockTile = ({ block, isAdmin, onClick }) => {
     </button>
   );
 };
+
+export default BlockTile;
